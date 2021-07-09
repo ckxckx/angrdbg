@@ -77,6 +77,8 @@ def StateShot(regs={}, sync_brk=True, check_dbg=False, concrete_imports=[], **kw
 
     if project.simos.name == "Linux":
         # inject code to get brk if we are on linux x86/x86_64
+
+        sync_brk = False #ckx
         if sync_brk and project.arch.name in ("AMD64", "X86"):
             try:
                 state.posix.set_brk(get_linux_brk(project.arch.bits))
