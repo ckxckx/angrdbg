@@ -1,5 +1,30 @@
 # angrdbg
 
+
+
+有关修改:
+
+* 修改angrdbg支持python 3 [done]
+* 维护angrdbg使其支持最新的angr [todo]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+
+
 Abstract library to generate angr states from a debugger state
 
 Works with both angr 7 and 8.
